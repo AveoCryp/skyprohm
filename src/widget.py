@@ -23,9 +23,5 @@ def mask_number(input_str: str) -> str:
 
 
 def convert_date_format(input_str: str) -> str:
-    """
-    Функция, которая принимает на вход строку вида 2018-07-11T02:26:18.671407
-    и возвращает строку с датой.
-    """
     input_date = datetime.strptime(input_str, "%Y-%m-%dT%H:%M:%S.%f")
     return input_date.strftime("%d.%m.%Y")
